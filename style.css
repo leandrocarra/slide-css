@@ -1,0 +1,57 @@
+.premium-frame {
+    height: 448px;
+    background-color: #f02626;
+    width: 100%;
+    position: absolute;
+    z-index: 4;
+}	
+.premium-frame__content {
+    margin: 0 auto;
+    position: relative;
+    width: 1002px;
+    height: 448px;
+    background-image: url("http://s.mlcdn.com.br/banner/parcerias/motorola_z2.jpg");
+}
+.premium-frame__effect {
+    overflow: hidden;
+    right: 70px;
+    position: absolute;
+    width: 601px;
+    height: 448px;
+}
+.premium-frame__frame-one, .premium-frame__frame-two, .premium-frame__frame-three, .premium-frame__frame-four {
+    position: absolute;
+    width: 601px;
+    height: 448px;
+    right: -597px;
+    z-index: 1;
+}
+
+.premium-frame__frame-one { animation:  animationFrameSet 5s ease-in-out 1s 1 reverse running; }
+.premium-frame__frame-two { animation: animationFrameSet 5s ease-in-out 6s 1 reverse running; }
+.premium-frame__frame-three { animation: animationFrameSet 5s ease-in-out 11s 1 reverse running; }
+.premium-frame__frame-four { animation: animationFrameSet 5s ease-in-out 16s 1 reverse running; }
+
+.premium-frame__close {
+    color: #fff;
+    float: right;
+    position: relative;
+    right: 20px;
+    font-size: 14px;
+    z-index: 2;
+    top: 10px;
+    width: 50px;
+    height: 30px;
+    text-align: right;
+    cursor: pointer;
+}
+.premium-frame__close:hover{
+    text-decoration: underline;
+}
+@keyframes animationFrameSet {
+    0%   { right: -597px }
+    20%  { right: 0px }
+    50%  { right: 0px }
+    80%  { right: 0px}
+    100% { right: -597px }
+}
