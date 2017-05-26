@@ -1,6 +1,6 @@
 # slide-css
 
-See a demo here https://jsfiddle.net/9yfLwq0a/8/
+See a demo here https://goo.gl/rVtCfJ
 
 ## About
 
