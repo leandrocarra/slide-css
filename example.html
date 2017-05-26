@@ -4,6 +4,14 @@
         <meta charset="UTF-8"/>
         <title>Slide-css</title>
         <link rel="stylesheet" type="text/css" media="all" href="style.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $('.js-premium-frame-close').click(function(){
+                    $('.premium-frame').fadeOut('normal');
+                });
+            });
+        </script>
     </head>
     <body>
         <div class="premium-frame">
